@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Sleeper build</title>
+ 	<link rel="stylesheet" href="style.css">
+ 	<script
+ 	src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+ </script>
+</head>
+<body>
+	<div class="mid-box">
+		<h1>Its bedtime!</h1>
+		<p class="move_up">SleeperBuild is monitoring brightness</p>
+	</div>
+	<div class="horiz-boxes tall-box">
+		<div class="roundbox fill-horiz">
+			<p class="center">Accumulated brightness</p>
+			<h1 id="acc" class="bottom_text">0</h1>
+		</div>
+		<div class="roundbox fill-horiz">
+			<p class="center">Target brightness</p>
+			<h1 class="bottom_text" id="target">50000</h1>
+			<div class="slidercontainer">
+				<input type="range" min="10000" max="100000" value="50000" class="slider" id="myRange">
+			</div>
+		</div>
+	</div>
+	<div class="horiz-boxes graph">
+		<canvas id="myChart" class="roundbox"></canvas>
+	</div>
+	<div class="horiz-boxes graph">
+		<canvas id="brightnessChart" class="roundbox"></canvas>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html> 
